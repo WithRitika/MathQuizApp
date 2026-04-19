@@ -1,11 +1,12 @@
 {
-  "name": "mathquiz",
+  "name": "competitive-math-quiz",
   "version": "1.0.0",
+  "description": "Real-time competitive math quiz",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "dev:server": "nodemon server.js",
-    "build": "cd client && npm run build",
-    "dev:client": "cd client && npm run dev"
+    "dev": "nodemon server.js",
+     "build": "npm install --prefix client && npm run build --prefix client"
   },
   "dependencies": {
     "express": "^4.18.2",
@@ -16,6 +17,6 @@
     "nodemon": "^3.0.1"
   },
   "engines": {
-    "node": "20.x"
+    "node": ">=16.0.0"
   }
 }
